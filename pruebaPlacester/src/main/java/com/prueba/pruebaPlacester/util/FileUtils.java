@@ -3,12 +3,9 @@ package com.prueba.pruebaPlacester.util;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.ArrayList;
-
 import org.apache.commons.lang3.StringUtils;
-
 import com.prueba.pruebaPlacester.ItemList;
-import com.prueba.pruebaPlacester.pojo.Item;
+
 
 /**
  * FileUtils: Many useful functions for text parsing
