@@ -3,6 +3,7 @@ package com.prueba.pruebaPlacester;
 import java.util.Iterator;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.prueba.pruebaPlacester.pojo.Item;
 import com.prueba.pruebaPlacester.util.FileUtils;
 
@@ -30,7 +31,7 @@ public class App
         //show results
         System.out.println("Results:");
         
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
         Iterator<Item> it = itemsList.getWordsList().iterator();
         while(it.hasNext()){
         	Item i = it.next();
